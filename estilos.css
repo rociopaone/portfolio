@@ -1,9 +1,17 @@
 @charset "utf-8";
 /* CSS Document */
 
-
+p{
+	color: #000;
+	leading-trim: both;
+	text-edge: cap;
+	font-family: "Gotham Light";
+	font-size: 1.5rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 2.8125rem; /* 150% */
+}
 /*************************************************** ::: NAV ::: *********************************************************************/
-
 .nav{
 	display: flex;
 	flex-direction: row;
@@ -55,10 +63,13 @@
 	width: auto;
 	height: auto;
 }
-
 /*************************************************** ::: FOOTER ::: *********************************************************************/
 footer a{
 	text-decoration: none;
+}
+
+footer{
+	padding-top: 20%;
 }
 
 .footer-slogan{
@@ -136,21 +147,36 @@ footer h5{
 	flex-direction: column;
 	align-items: center;
 }
-
-
-
-/*************************************************** ::: INDEX ::: *********************************************************************/
-.landing-page{
+/**************************************************** ::: COSITO REDES SOCIALES ::: ****************************************************/
+.redes-sociales{
 	display: flex;
-	padding: 60px 130px;
+padding: 12px;
+flex-direction: column;
+align-items: flex-end;
+gap: 10px;
+	
+	background: var(--Frutilla, #FC98A4);
+}
+/*************************************************** ::: INDEX ::: *********************************************************************/
+.main-index{
+	display: flex;
 	justify-content: center;
-	align-items: center;
-	gap: 20px;
+	align-items: flex-start;
+	gap: 70px;
+}
+
+.landing-page{
+	padding: 60px, 130px, 60px, 130px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-start;
+	gap: 30%;
 }
 
 
 .informacion h1{
-	width: 100%;
+	width: 10%;
 	height: auto;
 	
 	color: var(--Negro, var(--Black, #101011));
@@ -164,23 +190,14 @@ footer h5{
 .informacion p{
 	width: 100%;
 	height: auto;
-	
-	color: #000;
-	leading-trim: both;
-	text-edge: cap;
-	font-family: "Gotham Light";
-	font-size: 1.875rem;
-	font-style: normal;
-	font-weight: 500;
-	line-height: 2.8125rem; /* 150% */
 }
 
 .contactame-btn{
 	display: flex;
 	align-items: center;
 	
-	width: 30%;
-	height: 60px;
+	width: 60%;
+	height: 100%;
 	flex-direction: column;
 	justify-content: center;
 	flex-shrink: 0;
@@ -205,14 +222,207 @@ footer h5{
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	gap: 10%;
+}
+/*************************************************** ::: SOBRE MI ::: *********************************************************************/
+.main-sobre-mi{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 70%;
+}
+
+.intro-sobre-mi{
+	display: flex;
+	padding: 180px 130px 30px 130px;
+	justify-content: center;
+	align-items: center;
+	gap: 10%;
+}
+
+.bienvenida{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 70%;
+}
+
+.bienvenida p{
+	width: 100%;
+	height: auto;
+}
+
+.flecha{
+	width: 10%;
+	height: 10%;
+}
+
+.datos ul{
+	color: #000;
+	leading-trim: both;
+	text-edge: cap;
+	font-family: "Gotham Light";
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 180%; /* 2.8125rem */
+}
+
+.datos h2{
+	color: #000;
+	leading-trim: both;
+	text-edge: cap;
+	font-family: "Joly Display";
+	font-size: 4rem;
+	font-style: italic;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.datos{
+	width: 80%;
+	display: flex;
+	padding: 30px 130px;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 10%;
+}
+/*************************************************** ::: TRABAJOS ::: *********************************************************************/
+.main-trabajos{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 70%;
+}
+
+.intro-trabajos{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10%;
+}
+
+.intro-trabajos h1{
+	width: 100%;
+	height: auto;
+	
+	color: #000;
+	text-align: center;
+	leading-trim: both;
+	text-edge: cap;
+	font-family: "Joly Display";
+	font-size: 7.1875rem;
+	font-style: italic;
+	font-weight: 400;
+	line-height: 8.125rem; /* 113.043% */
+}
+
+.intro-trabajos p{
+	display: flex;
+	width: auto;
+	height: auto;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.bella-durmiente, .tim-burton, .otros-trabajos, .pinturas{
+	display: flex;
+	padding: 60px 0px;
+	flex-direction: column;
+	align-items: center;
+	gap: 10%;
+}
+
+.bella-durmiente, .tim-burton, .otros-trabajos, .pinturas h3{
+	display: flex;
+	width: 50%;
+	height: auto;
+	flex-direction: column;
+	justify-content: center;
+	
+	color: #000;
+	text-align: center;
+	leading-trim: both;
+	text-edge: cap;
+	font-family: "Joly Display";
+	font-size: 3.4375rem;
+	font-style: italic;
+	font-weight: 400;
+	line-height: 8.125rem; /* 236.364% */
+}
+
+.bella-durmiente, .tim-burton, .otros-trabajos, .pinturas p{
+	width: 100%;
+	height: auto;
+
+}
+
+.pinturas video{
+	width: 40%;
+	height: 40%;
+}
+/*************************************************** ::: CONTACTO ::: *********************************************************************/
+.intro-contacto{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10%;
+}
+
+.intro-contacto h1{
+	width: 100%;
+	height: auto;
+	
+	color: #000;
+	text-align: center;
+	leading-trim: both;
+	text-edge: cap;
+	font-family: "Joly Display";
+	font-size: 7.1875rem;
+	font-style: italic;
+	font-weight: 400;
+	line-height: 8.125rem; /* 113.043% */
+}
+
+.intro-contacto p{
+	display: flex;
+	width: auto;
+	height: auto;
+	flex-direction: column;
+	justify-content: center;
+}
+
+form{
+	display: flex;
+	width: 1329px;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: flex-start;
 	gap: 70px;
+	flex-wrap: wrap;
 }
 
 
 
-/*************************************************** ::: SOBRE MI ::: *********************************************************************/
-/*************************************************** ::: TRABAJOS ::: *********************************************************************/
-/*************************************************** ::: CONTACTO ::: *********************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
