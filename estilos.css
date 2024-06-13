@@ -356,10 +356,104 @@ gap: 10px;
 	height: auto;
 
 }
+.pinturas{
+	display: flex;
+	padding: 60px 0px;
+	flex-direction: column;
+	align-items: center;
+	gap: 55px;
+}
 
-.pinturas video{
-	width: 40%;
-	height: 40%;
+.video-tini video{
+	width: 70%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+figcaption{
+	color: #000;
+	leading-trim: both;
+	text-edge: cap;
+	font-family: "Gotham Light";
+	font-size: 1.5rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 2.8125rem; /* 150% */
+}
+
+.centrado{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.galeria-pinturas{
+	width: 90%;	
+	height: inherit;
+	display: inline-grid;
+	grid-template:1fr 1fr 1fr / 1fr 1fr 1fr;
+	grid-gap: 10px;
+}
+
+
+
+/**** ::: CONTACTO ::: ****/
+
+#galeria {
+	display: none;
+	width: 100%;
+	justify-content: center;
+	height: 95vh;
+	background-color: #FC98A4;
+	position: absolute;
+	top: 0;
+	z-index: 10;
+}
+
+#galeria-oculta {
+	display: flex;
+	width: 100%;
+	max-width: 1450px;
+	overflow: hidden;
+	z-index: 20;
+}
+
+.fraccion-galeria {
+	display: flex;
+	align-items: center;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	width: 100%;
+	min-width: 1450px;
+	height: 100vh;
+	justify-content: space-between;
+}
+
+.primer-ultima-flecha {
+	visibility: hidden;
+}
+
+.close {
+	position: absolute;
+	top: 10px;
+	right: 2%;
+}
+
+/*------IDS CON LAS IMÁGENES DE LA GALERÍA-------*/
+
+#foto-1 {
+	background-image: url("img/trabajos/carrusel-1.png")
+}
+
+#foto-2 {
+	background-image: url("img/trabajos/carrusel-2.png");
+}
+
+#foto-3 {
+	background-image:url("img/trabajos/carrusel-3.png");
 }
 
 
