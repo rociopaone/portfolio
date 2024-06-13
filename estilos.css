@@ -1,6 +1,11 @@
 @charset "utf-8";
 /* CSS Document */
 
+body{
+	margin: 0px;
+	padding: 0px;
+}
+
 p{
 	color: #000;
 	leading-trim: both;
@@ -16,11 +21,11 @@ p{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	align-items: flex-start;
+	align-items: center;
 	gap: 300px;
-	position: absolute;
-	left: 120px;
-	top: 60px;
+	position: static;
+	margin-top: 30px;
+	margin-bottom: 100px;
 }
 
 .nav a{
@@ -53,7 +58,7 @@ p{
 	leading-trim: both;
 	text-edge: cap;
 	font-family: "Gotham Light";
-	font-size: 1.875rem;
+	font-size: 1.7rem;
 	font-style: normal;
 	font-weight: 500;
 	line-height: normal;
@@ -70,6 +75,7 @@ footer a{
 
 footer{
 	padding-top: 20%;
+	position: static;
 }
 
 .footer-slogan{
@@ -158,15 +164,8 @@ footer h5{
 	flex-direction: column;
 }
 /*************************************************** ::: INDEX ::: *********************************************************************/
-.main-index{
-	display: flex;
-	justify-content: center;
-	align-items: flex-start;
-	gap: 70px;
-}
 
 .landing-page{
-	padding: 60px, 130px, 60px, 130px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -176,19 +175,21 @@ footer h5{
 
 
 .informacion h1{
-	width: 10%;
+	width: auto;
 	height: auto;
 	
 	color: var(--Negro, var(--Black, #101011));
 	font-family: "Joly Display";
-	font-size: 7.8125rem;
+	font-size: 7rem;
 	font-style: italic;
 	font-weight: 400;
 	line-height: 100%; /* 7.8125rem */
+	
+	margin: 0px;
 }
 
 .informacion p{
-	width: 100%;
+	width: auto;
 	height: auto;
 }
 
@@ -196,8 +197,8 @@ footer h5{
 	display: flex;
 	align-items: center;
 	
-	width: 60%;
-	height: 100%;
+	width: auto;
+	height: auto;
 	flex-direction: column;
 	justify-content: center;
 	flex-shrink: 0;
@@ -216,13 +217,14 @@ footer h5{
 	border: 2px solid #000;
 	
 	background-color: transparent;
+	
+	padding: 18px;
 }
 
 .informacion{
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	gap: 10%;
 }
 /*************************************************** ::: SOBRE MI ::: *********************************************************************/
 .main-sobre-mi{
@@ -303,7 +305,7 @@ footer h5{
 }
 
 .intro-trabajos h1{
-	width: 100%;
+	width: auto;
 	height: auto;
 	
 	color: #000;
@@ -311,10 +313,12 @@ footer h5{
 	leading-trim: both;
 	text-edge: cap;
 	font-family: "Joly Display";
-	font-size: 7.1875rem;
+	font-size: 7rem;
 	font-style: italic;
 	font-weight: 400;
 	line-height: 8.125rem; /* 113.043% */
+	
+	margin: 0px;
 }
 
 .intro-trabajos p{
@@ -393,7 +397,7 @@ figcaption{
 	width: 90%;	
 	height: inherit;
 	display: inline-grid;
-	grid-template:1fr 1fr 1fr / 1fr 1fr 1fr;
+	grid-template:1fr 1fr 1fr / 1fr 1fr 1fr;/*Aparece como un error pero se ve bien en la pagina, ni idea que sucede :P */
 	grid-gap: 10px;
 }
 
@@ -471,7 +475,7 @@ figcaption{
 }
 
 .intro-contacto h1{
-	width: 100%;
+	width: auto;
 	height: auto;
 	
 	color: #000;
@@ -479,10 +483,12 @@ figcaption{
 	leading-trim: both;
 	text-edge: cap;
 	font-family: "Joly Display";
-	font-size: 7.1875rem;
+	font-size: 7rem;
 	font-style: italic;
 	font-weight: 400;
 	line-height: 8.125rem; /* 113.043% */
+	
+	margin: 0px;
 }
 
 .intro-contacto p{
