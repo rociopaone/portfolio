@@ -262,7 +262,7 @@ footer h5{
 }
 
 .contactame-btn:hover{
-	background-color: #FC98A4;
+	background-color: #C7013E;
 }
 
 .informacion{
@@ -424,14 +424,16 @@ iframe{
 }
 
 .video-tini video{
-	width: 70%;
-	height: auto;
+	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
 figcaption{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	color: #000;
 	leading-trim: both;
 	text-edge: cap;
@@ -439,7 +441,8 @@ figcaption{
 	font-size: 1.5rem;
 	font-style: normal;
 	font-weight: 500;
-	line-height: 2.8125rem; /* 150% */
+	line-height: 2.8125rem;
+	margin-top: 2%;
 }
 
 .centrado{
@@ -456,15 +459,25 @@ figcaption{
 	background-color: #FC98A4;
 }
 
+.galeria-pinturas-general{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	column-gap: 55px;
+	
+	margin-top: 8%;
+}
+
 .galeria-pinturas{
 	width: 90%;	
 	height: inherit;
 	display: inline-grid;
-	grid-template:1fr 1fr 1fr / 1fr 1fr 1fr;/*Aparece como un error pero se ve bien en la pagina, ni idea que sucede :P */
+	grid-template-columns: 1fr 1fr 1fr;/*Aparece como un error pero se ve bien en la pagina, ni idea que sucede :P */
+	grid-template-rows: auto;
 	grid-gap: 10px;
 }
-
-
 
 /**** ::: GALERIA NOTION CATEDRA ::: ****/
 
@@ -522,9 +535,78 @@ figcaption{
 #foto-3 {
 	background-image:url("img/trabajos/carrusel-3.png");
 }
+
+
+
+
+.galeria-bella {
+    display: flex;
+    flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	margin-top: 5%;
+}
+
+.gallery-item {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gif{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position:static;
+    width: 30%;
+    height: auto;
+	border-radius: 10px;
+}
+
+
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta la altura según sea necesario */
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 50%; /* Ancho de la galería */
+    height: auto; /* Alto de la galería */
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease; /* Transición suave */
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /*************************************************** ::: CONTACTO ::: *********************************************************************/
 .intro-contacto{
-	display: flex;
+	display: flex; 
 	flex-direction: column;
 	align-items: center;
 	gap: 10%;
@@ -634,8 +716,3 @@ input[type=radio]{
 .enviar-btn:hover{
 	background-color: #019A76;
 }
-
-
-
-
-
