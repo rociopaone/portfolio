@@ -1,9 +1,24 @@
 @charset "utf-8";
 /* CSS Document */
 
-body{
+*{
 	margin: 0px;
 	padding: 0px;
+}
+
+/*FUENTES*/
+@font-face {
+	font-family: "Gotham-Light";
+	src: url("fuentes/Gotham-Light.otf") format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Gotham-Bold";
+	src: url("fuentes/Gotham-Bold.otf") format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
 
 p{
@@ -15,6 +30,10 @@ p{
 	font-style: normal;
 	font-weight: 500;
 	line-height: 2.8125rem; /* 150% */
+}
+
+b{
+	font-family: "Gotham-Bold";
 }
 /*************************************************** ::: NAV ::: *********************************************************************/
 .nav{
@@ -58,16 +77,28 @@ p{
 	leading-trim: both;
 	text-edge: cap;
 	font-family: "Gotham Light";
-	font-size: 1.7rem;
+	font-size: 1.3rem;
 	font-style: normal;
 	font-weight: 500;
 	line-height: normal;
 }
 
+.texto-nav:hover{
+	color: #C7013E;
+	font-family: "Joly Display";
+	font-style: italic;
+	font-size: 1.5rem;
+	font-weight: 400;
+	line-height: normal;
+}
+
+
 .estrella-nav{
 	width: auto;
 	height: auto;
 }
+
+
 /*************************************************** ::: FOOTER ::: *********************************************************************/
 footer a{
 	text-decoration: none;
@@ -75,6 +106,7 @@ footer a{
 
 footer{
 	padding-top: 20%;
+	padding-bottom: 2%;
 	position: static;
 }
 
@@ -114,6 +146,8 @@ footer h5{
 	flex-direction: column;
 	justify-content: flex-end;
 	flex-shrink: 0;
+	
+	padding-bottom: 3%;
 }
 
 .footer-link img{
@@ -146,6 +180,7 @@ footer h5{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	padding-bottom: 2%;
 }
 
 .footer-link{
@@ -156,7 +191,7 @@ footer h5{
 /**************************************************** ::: COSITO REDES SOCIALES ::: ****************************************************/
 .redes-sociales{
 	position: fixed;
-	background-color: #FC98A4;
+	background-color: #D7F6CD;
 	padding: 12px;
 	gap: 10px;
 	right: 0;
@@ -164,15 +199,20 @@ footer h5{
 	flex-direction: column;
 }
 /*************************************************** ::: INDEX ::: *********************************************************************/
-
 .landing-page{
 	display: flex;
+	padding: 0px 130px ;
 	flex-direction: row;
-	justify-content: space-around;
-	align-items: flex-start;
-	gap: 30%;
+	justify-content: space-between;
+	align-items: center;
+	gap: 25%;
 }
 
+.foto-landing-page{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
 
 .informacion h1{
 	width: auto;
@@ -183,13 +223,13 @@ footer h5{
 	font-size: 7rem;
 	font-style: italic;
 	font-weight: 400;
-	line-height: 100%; /* 7.8125rem */
+	line-height: 100%;
 	
 	margin: 0px;
 }
 
 .informacion p{
-	width: auto;
+	width: 85%;
 	height: auto;
 }
 
@@ -221,22 +261,23 @@ footer h5{
 	padding: 18px;
 }
 
+.contactame-btn:hover{
+	background-color: #FC98A4;
+}
+
 .informacion{
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 }
-/*************************************************** ::: SOBRE MI ::: *********************************************************************/
-.main-sobre-mi{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 70%;
-}
 
+.informacion a{
+	text-decoration: none;
+}
+/*************************************************** ::: SOBRE MI ::: *********************************************************************/
 .intro-sobre-mi{
 	display: flex;
-	padding: 180px 130px 30px 130px;
+	padding: 0px 130px 30px 130px;
 	justify-content: center;
 	align-items: center;
 	gap: 10%;
@@ -252,6 +293,7 @@ footer h5{
 .bienvenida p{
 	width: 100%;
 	height: auto;
+	margin-bottom: 5%;
 }
 
 .flecha{
@@ -267,7 +309,7 @@ footer h5{
 	font-size: 1rem;
 	font-style: normal;
 	font-weight: 500;
-	line-height: 180%; /* 2.8125rem */
+	line-height: 180%;
 }
 
 .datos h2{
@@ -283,25 +325,28 @@ footer h5{
 
 .datos{
 	width: 80%;
-	display: flex;
-	padding: 30px 130px;
-	justify-content: center;
-	align-items: flex-start;
 	gap: 10%;
-}
-/*************************************************** ::: TRABAJOS ::: *********************************************************************/
-.main-trabajos{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 70%;
+	padding: 30px 130px;
+	display: inline-grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	
 }
 
+b{
+	font-family: "Gotham-Bold";
+}
+
+iframe{
+	margin-bottom: 5%;
+}
+
+/*************************************************** ::: TRABAJOS ::: *********************************************************************/
 .intro-trabajos{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	gap: 10%;
+	margin-bottom: 10%;
 }
 
 .intro-trabajos h1{
@@ -316,9 +361,9 @@ footer h5{
 	font-size: 7rem;
 	font-style: italic;
 	font-weight: 400;
-	line-height: 8.125rem; /* 113.043% */
+	line-height: 8.125rem;
 	
-	margin: 0px;
+	margin-bottom: 5%;
 }
 
 .intro-trabajos p{
@@ -352,7 +397,7 @@ footer h5{
 	font-size: 3.4375rem;
 	font-style: italic;
 	font-weight: 400;
-	line-height: 8.125rem; /* 236.364% */
+	line-height: 8.125rem;
 }
 
 .bella-durmiente, .tim-burton, .otros-trabajos, .pinturas p{
@@ -403,7 +448,7 @@ figcaption{
 
 
 
-/**** ::: CONTACTO ::: ****/
+/**** ::: GALERIA NOTION CATEDRA ::: ****/
 
 #galeria {
 	display: none;
@@ -413,7 +458,7 @@ figcaption{
 	background-color: #FC98A4;
 	position: absolute;
 	top: 0;
-	z-index: 10;
+	z-index: 10;*/
 }
 
 #galeria-oculta {
@@ -433,7 +478,7 @@ figcaption{
 	width: 100%;
 	min-width: 1450px;
 	height: 100vh;
-	justify-content: space-between;
+	justify-content: space-between;	
 }
 
 .primer-ultima-flecha {
@@ -459,6 +504,33 @@ figcaption{
 #foto-3 {
 	background-image:url("img/trabajos/carrusel-3.png");
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -512,10 +584,38 @@ form{
 
 
 
+.enviar-btn{
+	display: flex;
+	align-items: center;
+	
+	width: auto;
+	height: auto;
+	flex-direction: column;
+	justify-content: center;
+	flex-shrink: 0;
+	
+	color: #000;
+	text-align: center;
+	leading-trim: both;
+	text-edge: cap;
+	font-family: "Gotham Light";
+	font-size: 1.5625rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	
+	border-radius: 70px;
+	border: 2px solid #000;
+	
+	background-color: transparent;
+	
+	padding: 18px;
+}
 
 
-
-
+.enviar-btn:hover{
+	background-color: #019A76;
+}
 
 
 
