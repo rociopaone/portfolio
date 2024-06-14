@@ -13,5 +13,5 @@ document.addEventListener('DOMContentLoaded', function() {
         carouselTrack.style.transform = `translateX(-${index * imageWidth}px)`;
     }
 
-    setInterval(nextSlide, 1500); // Cambia de imagen cada 3 segundos
+    setInterval(nextSlide, 1500); // Es el nro de los segundos en los q tarda en cambiar
 });
