@@ -46,34 +46,37 @@
 			<h1>¿Dudas?<br>¿Ganas de empezar?</h1>
 			<p>Completá el siguiente formulario con tus dudas o pedido y me pondré en contacto con vos.</p>
 			<img class="flecha" src="img/flecha.png" alt="flecha">
-		</section>
-		
-		<form method="post" action="mailto:ropaonedg@gmail.com?subject='Prueba Form Contacto'" target="_blank" enctype="text/plain">
-			<label for="nombre-y-apellido">Nombre y apellido*</label>
-			<input type="text" name="nombre-y-apellido" id="Nombre-y-apellido"  maxlength="40" placeholder="Tu nombre y apellido" required>
+	  </section>
+		<form method="post" action="mailto:ropaonedg@gmail.com?subject='Formulario de la web'" target="_blank" enctype="text/plain">
+			<div>
+				<label for="Nombre">Nombre y apellido*</label>
+				<input type="text" name="Nombre" id="Nombre" maxlength="30" required>
+				
+				<label for="Celular">Celular*</label>
+				<input type="tel" name="Celular" id="Celular" required>
+				
+				<h7>¿Cuál opción te describe?*</h7>
+				<label for="Opcion">Emprendimiento<input type="radio" name="Emprendimiento" value="Emprendimiento" id="Emprendimiento"></label>
+				<label>Pequeño negocio<input type="radio" name="Pequeño negocio" value="Pequeño negocio" id="Pequeño-negocio"></label>
+				<label>Compañía grande<input type="radio" name="Compañía grande" value="Compañía grande" id="Compañía-grande"></label>
+			</div>
 			
-			<label>Email*</label>
-			<input type="email" name="email" id="email" placeholder="Tu email" required>
+			<div>
+				<label for="Email">Email*</label>
+				<input type="email" name="Email" id="Email" required>
+				
+				<label for="Web">Sitio web*</label>
+				<input type="text" name="Web" id="Web" maxlength="30" required>
+				
+				<label for="Duda">Dudas / Consultas</label>
+				<textarea></textarea>
+			</div>
 			
-			<label>Celular*</label>
-			<input type="tel" name="celular" id="celular" placeholder="(000)0000000" required>
-			
-			<label>Redes sociales y sitio web*</label>
-			<input type="text" name="redes-web" id="redes-web" placeholder="redes" required>
-			
-			<h4>¿Cuál opción te describe?*</h4>
-			<label>op 1 <input type="radio" name="op1" value="op1" id="op1"></label>
-			<label>op 2 <input type="radio" name="op2" value="op2" id="op2"></label>
-			<label>op 3 <input type="radio" name="op3" value="op3" id="op3"></label>
-			
-			<label for="duda-consulta">Duda / consulta*</label>
-			<textarea name="duda-consulta" id="duda-consulta"></textarea>
-			
-			<input type="reset">
-			
-			<input type="submit" formenctype="text/plain" class="enviar-btn">
-			
-		</form>
+			<div>
+				<input type="reset" value="Borrar" class="borrar-btn">
+				<input type="submit" value="Enviar" formenctype="text/plain" class="enviar-btn">
+			</div>
+	  </form>
 	</main>
 <!-------------------------------------------------- ::::: FOOTER ::::: ------------------------------------------------>
 	<footer>
